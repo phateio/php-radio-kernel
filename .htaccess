@@ -1,0 +1,8 @@
+<Files listen.php>
+BrowserMatch ".*" no-gzip downgrade-1.0 force-no-vary force-response-1.0
+</Files>
+
+RewriteEngine On
+#RewriteBase /
+
+RewriteRule ^tmp\/.*$ 403.shtml [F]
